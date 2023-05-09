@@ -8,12 +8,15 @@
 	<title>{% block title %} Home {% endblock %}</title>
 </head>
 <body>
+
+<h1 class="head_line">{% block headline %}にほんご Vocabulary{% endblock %}</h1>
+
 {% block body %}
 <div class="container">
-	<h1 class="head_line">にほんご Vocabulary</h1>
 	<button class="button-30" role="button">N5</button>
 	<button class="button-30" role="button">N4</button>
 </div>
 {% endblock %}
+
 </body>
 </html>
