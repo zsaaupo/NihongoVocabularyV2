@@ -7,6 +7,7 @@ function table(value){
     $('table').show()
     $('#back').show()
     $('#home').hide()
+    
     $.ajax({
         url: value,
         type: "GET",

@@ -3,6 +3,7 @@ from rest_framework.response import Response
 from rest_framework.generics import ListAPIView
 from .models import *
 from .serializers import *
+import random
 
 
 def N5(request):
@@ -22,4 +23,6 @@ class VocabularyAPI(ListAPIView):
 
     def get_queryset(self):
         list_number = self.kwargs['list_number']
-        return Vocabulary.objects.filter(vocabulary_list=list_number)
+        data_list = list(Vocabulary.objects.filter(vocabulary_list=list_number))
+        random_data = random.sample(data_list, len(data_list))
+        return random_data
