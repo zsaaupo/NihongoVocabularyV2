@@ -15,9 +15,16 @@ function table(value){
         success: function(response) {
             for(i in response){
                 $("#voc_table").append(`<tr><td><button class="button-30" role="button">${response[i].nihongo}</button></td>
-                <td><button class="button-30" role="button">${response[i].english}</button></td>
-                <td><button class="button-30" role="button">${response[i].bangla}</button></td><tr>`)
+                <td><button style = "color: #F1F1F6;" id="eigo" class="button-30" role="button">${response[i].english}</button></td>
+                <td><button style = "color: #F1F1F6;" id="bango" class="button-30" role="button">${response[i].bangla}</button></td><tr>`)
             }
+            $("#voc_table").on("click", "#eigo", function() {
+                $(this).css("color", "black");
+              });
+            
+            $("#voc_table").on("click", "#bango", function() {
+                $(this).css("color", "black");
+            });
         },
         error: function(xhr, status, error) {
           console.log(xhr.responseText);
