@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+    
+    // ajax for N5 Voc list
     $.ajax({
       url: "/N5/list/",
       type: "GET",
@@ -12,4 +15,6 @@ $(document).ready(function() {
         console.log(xhr.responseText);
       }
     });
-  });
+
+
+});
