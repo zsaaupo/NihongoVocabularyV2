@@ -9,7 +9,7 @@ class VocabularyList(models.Model):
     
 
 class Vocabulary(models.Model):
-    vocabulary_list = models.ForeignKey(VocabularyList, on_delete=models.PROTECT, related_name="vocabulary_list")
+    vocabulary_list = models.ForeignKey(VocabularyList, on_delete=models.PROTECT, related_name="vocabulary")
     english = models.CharField(max_length=100)
     nihongo = models.CharField(max_length=100)
     bangla = models.CharField(max_length=100, null=True, blank=True)
