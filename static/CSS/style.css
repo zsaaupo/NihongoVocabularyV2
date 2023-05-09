@@ -11,6 +11,15 @@ body {
     text-shadow: 2px 2px 7px black
 }
 
+table{
+  margin: auto;
+}
+
+th{
+  color: #F1F1F6;
+  text-shadow: 2px 2px 7px black
+}
+
 /* button */
 .button-30 {
   align-items: center;
