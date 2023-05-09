@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="{% static 'CSS\style.css' %}">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<title>{% block title %} Home {% endblock %}</title>
 </head>
 <body>
@@ -13,10 +14,11 @@
 
 {% block body %}
 <div class="container">
-	<button class="button-30" role="button">N5</button>
-	<button class="button-30" role="button">N4</button>
+	<a href="/N5"><button class="button-30" role="button">N5</button></a>
+	<a href="/N4"><button class="button-30" role="button">N4</button></a>
 </div>
 {% endblock %}
 
+<script src="{% static 'JS/main.js' %}"></script>
 </body>
 </html>
