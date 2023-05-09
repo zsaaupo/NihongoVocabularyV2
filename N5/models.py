@@ -1,8 +1,6 @@
 from django.db import models
 
 
-
-
 class VocabularyList(models.Model):
     list_number = models.CharField(max_length=2)
 

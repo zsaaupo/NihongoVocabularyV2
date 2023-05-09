@@ -1,3 +1,7 @@
 from django.shortcuts import render
+from .models import *
 
-# Create your views here.
+
+def N5(request):
+    
+    return render(request, 'N5.html')
