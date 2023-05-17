@@ -1,9 +1,22 @@
 $('table').hide()
 $('#back').hide()
 
+
+// conditional statement for vocabulary list
+let address = window.location.pathname
+
+if (address == "/N5/"){
+    $("#N4_list").hide()
+}
+if (address == "/N4/"){
+    $("#N5_list").hide()
+}
+
+
 // ajax for N5 Voc
 function table(value){
     $('#N5_list').hide()
+    $("#N4_list").hide()
     $('table').show()
     $('#back').show()
     $('#home').hide()
@@ -41,6 +54,22 @@ $.ajax({
     success: function(response) {
         for (i in response){
             $("#N5_list").append(`<br><br><br><a><button onclick="table('/N5/list/${response[i].list_number}')" class="button-30" role="button">List ${response[i].list_number}</button></a>`);
+        };
+    },
+    error: function(xhr, status, error) {
+        console.log(xhr.responseText);
+    }
+});
+
+
+// ajax for N5 Voc list
+$.ajax({
+    url: "/N4/list/",
+    type: "GET",
+    dataType: "json",
+    success: function(response) {
+        for (i in response){
+            $("#N4_list").append(`<br><br><br><a><button onclick="table('/N4/list/${response[i].list_number}')" class="button-30" role="button">List ${response[i].list_number}</button></a>`);
         };
     },
     error: function(xhr, status, error) {

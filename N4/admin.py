@@ -2,18 +2,16 @@ from django.contrib import admin
 from .models import *
 
 
-
-
-class VocabularyListAdmin(admin.ModelAdmin):
+class VocabularyListN4Admin(admin.ModelAdmin):
     
     fields = [
         "list_number"
     ]
     
-admin.site.register(VocabularyList, VocabularyListAdmin)
+admin.site.register(VocabularyListN4, VocabularyListN4Admin)
 
 
-class VocabularyAdmin(admin.ModelAdmin):
+class VocabularyN4Admin(admin.ModelAdmin):
     
     fields = [
         "vocabulary_list",
@@ -22,4 +20,4 @@ class VocabularyAdmin(admin.ModelAdmin):
         "bangla"
     ]
     
-admin.site.register(Vocabulary, VocabularyAdmin)
+admin.site.register(VocabularyN4, VocabularyN4Admin)

@@ -1,15 +1,15 @@
 from rest_framework import serializers
 from .models import *
 
-class VocabularyListSerializer(serializers.ModelSerializer):
+class VocabularyListN5Serializer(serializers.ModelSerializer):
 
     class Meta:
-        model = VocabularyList
+        model = VocabularyListN5
         fields = ["list_number"]
  
 
-class VocabularySerializer(serializers.ModelSerializer):
+class VocabularyN5Serializer(serializers.ModelSerializer):
     
     class Meta:
-        model = Vocabulary
+        model = VocabularyN5
         fields = "__all__"

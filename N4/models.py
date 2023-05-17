@@ -1,20 +1,15 @@
 from django.db import models
+from N5.models import *
 
-
-
-
-class VocabularyList(models.Model):
-    list_number = models.CharField(max_length=2)
-
-    def __str__(self):
-        return "List Number "+str(self.list_number)
+# N4 models with all abstract models inherited
+class VocabularyListN4(VocabularyList):
     
+    def __str__(self):
+        return self.list_number
 
-class Vocabulary(models.Model):
-    vocabulary_list = models.ForeignKey(VocabularyList, on_delete=models.PROTECT, related_name="vocabulary_list")
-    english = models.CharField(max_length=100)
-    nihongo = models.CharField(max_length=100)
-    bangla = models.CharField(max_length=100, null=True, blank=True)
+
+class VocabularyN4(Vocabulary):
+    vocabulary_list = models.ForeignKey(VocabularyListN4, on_delete=models.PROTECT, related_name="vocabulary")
     
     def __str__(self):
         return self.nihongo + " " + self.english
