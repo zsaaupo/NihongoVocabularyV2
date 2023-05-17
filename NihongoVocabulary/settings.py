@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'N5',
     'N4',
+    'Kanji',
     'rest_framework',
 ]
 
