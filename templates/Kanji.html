@@ -1,0 +1,15 @@
+{% extends 'index.html' %}
+{% block title %}Kanji list{% endblock %}
+{% block headline %}Kanji list{% endblock %}
+{% block body %}
+<table style="text-align: center;" cellspacing="30px" id="kanji_table">
+    <th><h2>漢字</h2></th>
+    <th><h2>日本語</h2></th>
+    <th><h1>English</h1></th>
+    <th><h2>বাংলা</h2></th>
+</table>
+<br>
+<button id="back" onclick="location.reload()" class="button-30" role="button">Back</button>
+<br>
+<a href="/"><button id="home" class="button-30" role="button">Home</button></a>
+{% endblock %}

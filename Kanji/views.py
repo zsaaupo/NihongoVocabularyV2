@@ -7,7 +7,7 @@ import random
 
 def Kanji(request):
     
-    return render(request, 'Vocabulary.html')
+    return render(request, 'Kanji.html')
 
         
 class Kanji5(ListAPIView):
