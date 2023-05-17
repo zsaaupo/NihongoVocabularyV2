@@ -22,5 +22,6 @@ urlpatterns = [
     path('', home),
     path('N5/', include("N5.urls")),
     path('N4/', include("N4.urls")),
+    path('Kanji/', include("Kanji.urls")),
     path('admin/', admin.site.urls),
 ]
