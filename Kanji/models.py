@@ -8,7 +8,7 @@ class KanjiN5(models.Model):
     kanji = models.CharField(max_length=100, unique=True)
     
     def __str__(self):
-        return self.kanji + " " + self.nihongo
+        return self.kanji + " --- " + str(self.nihongo)
     
 
 class KanjiN4(models.Model):
@@ -17,5 +17,5 @@ class KanjiN4(models.Model):
     kanji = models.CharField(max_length=100, unique=True)
     
     def __str__(self):
-        return self.kanji + " " + self.nihongo
+        return self.kanji + " --- " + str(self.nihongo)
     

@@ -11,6 +11,11 @@ body {
     text-shadow: 2px 2px 7px black
 }
 
+h1{
+  color: #F1F1F6;
+  text-shadow: 2px 2px 7px black
+}
+
 table{
   margin: auto;
 }
