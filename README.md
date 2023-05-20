@@ -40,7 +40,7 @@ Install Nihongo Vocabulary (V2)
 ```
     
 ## Upcoming Feature
-- User Autentication
+- User Authentication
 
 ## Nihongo Vocabulary (V1)
 - git repo: https://github.com/zsaaupo/NihongoVocabulary
