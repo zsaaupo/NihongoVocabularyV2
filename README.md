@@ -4,10 +4,10 @@
 It is a Japanese Language Vocabulary and Kanji self-practice web app that is made based on only my own requirements. there are a lot of things that can be added.
 ## Features
 
-- I can add Vocabulary and Kanji based on my study
-- Quiz (User can see only Japanese and the meaning is hidden. After guessing the meaning user can unhide and check the meaning)
--  **after reloading or goto a new list the serial of Vocabularies or Kanjis are not the same always. it changes every time**
--  Separate section for N5 and N4
+- I can add vocabulary and kanji based on my study.
+- There is a quiz feature where the user can see only Japanese, and the meaning is hidden. After guessing the meaning, the user can unhide and check the correct answer.
+-  **The serial of vocabularies or kanjis changes every time the page is reloaded or a new list is accessed.**
+-  There are separate sections for N5 and N4 levels.
 ## Live
 
 http://nihongovocabulary.pythonanywhere.com
@@ -16,9 +16,9 @@ http://nihongovocabulary.pythonanywhere.com
 ## Lessons Learned
 
 
-- Use of abstract class and inheritance
+- Abstract models are used and inherited to ensure code reusability.
 
-- How to use less HTML by using JS
+- JavaScript is utilized to reduce the number of HTML pages.
 
 
 ## Installation
