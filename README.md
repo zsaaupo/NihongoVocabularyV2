@@ -7,7 +7,7 @@ It is a Japanese Language Vocabulary and Kanji self-practice web app that is mad
 - I can add Vocabulary and Kanji based on my study
 - Quiz (User can see only Japanese and the meaning is hidden. After guessing the meaning user can unhide and check the meaning)
 -  **after reloading or goto a new list the serial of Vocabularies or Kanjis are not the same always. it changes every time**
--  Separate section of N5 and N4
+-  Separate section for N5 and N4
 ## Live
 
 http://nihongovocabulary.pythonanywhere.com
